@@ -47,13 +47,19 @@ Se asumió que la verificación de la información es un punto crítico del proc
 
 Buenas prácticas en el modelado de procesos utilizando BPMN.
 
-### Resumen:
+#### Buenas Prácticas BPMN y Aplicación en la Industria
 
-BPMN es un estándar internacional que permite representar procesos de negocio de forma visual, facilitando su análisis y comprensión. Su uso permite identificar claramente las actividades, actores y decisiones dentro de un proceso.
+Para el modelado efectivo de modelos de negocio implementado BPMN se requiere el seguimiento de principios fundamentales que garantizan la claridad y comprensión del diagrama. Para esto primeramente se tiene que usar Momenclatura, la cual constituye un elemento crítico, donde cada actividad debe nombrarse utilizando la estructura verbo-sustantivo, como "Registrar Paciente" o "Validar Documentos”, este uso de nomenclaturas permite que cualquier lector identifique inmediatamente la acción y el objeto sobre el cual se ejecuta, evitando ambigüedades que puedan generar interpretaciones erróneas del proceso. Dentro de la estructura del proceso debe seguirse principios de diseño que faciliten su comprensión visual. Freund y Rücker establecen la regla que sugiere mantener entre 5 y 9 elementos por linea  para preservar la legibilidad del modelo.Cuando se sobrecarga un diagrama este pierde su comprensión y dificulta su análisis. Asimismo, cada proceso principal debe contar con un único evento de inicio y un único evento de fin claramente identificables, permitiendo trazar el flujo completo desde su activación hasta su conclusión. El flujo debe diseñarse de izquierda a derecha y de arriba hacia abajo, siguiendo los patrones naturales de lectura occidental, lo que facilita la navegación intuitiva a través del proceso.
 
-Entre las buenas prácticas se encuentra el uso correcto de eventos, actividades y gateways, así como la representación clara del flujo del proceso. Esto facilita la identificación de mejoras y optimizaciones.
+El uso correcto de los elementos BPMN representa otro pilar fundamental de las buenas prácticas. Las compuertas deben hacerse explícitos mediante el uso de rombos de decisión, evitando la práctica incorrecta de generar múltiples flujos directamente desde una tarea. Esta claridad permite identificar con precisión los puntos de decisión y las condiciones que gobiernan cada rama del proceso. Es esencial comprender la diferencia conceptual entre eventos y tareas: los eventos representan algo que sucede, mientras que las tareas representan algo que se hace activamente.
 
-En este taller, BPMN permitió representar el proceso de generación del FUEC de forma clara, facilitando su análisis y permitiendo comprender su estructura y funcionamiento.
+#### Ejemplos de Aplicación en la Industria
+
+En el sector de tecnología y software, IBM implementó BPMN para optimizar sus procesos de desarrollo y entrega de software siguiendo metodologías DevOps, logrando reducir el tiempo de despliegue. Su modelo incluyó lanes para Development, Testing, Operations y Security, integrando procesos de integración continua y entrega continua (CI/CD). Adicionalmente, utilizaron internamente  BPMN para modelar sus procesos de clientes en servicios SaaS, incorporando subprocesos para configuración técnica, capacitación de usuarios y migración de datos. Este enfoque les permitió estandarizar la experiencia de implementación y reducir el tiempo promedio de activación de nuevos clientes.
+
+#### Validación de modelos BPMN
+ 
+La validación de un modelo BPMN debe evaluarse en múltiples dimensiones para garantizar su calidad y utilidad. Desde el punto de vista sintáctico, cada gateway debe mantener un balance entre sus entradas y salidas, asegurando que todos los flujos que se dividen eventualmente conduzcan a eventos de fin válidos. La semántica del modelo requiere que no existan elementos cuyo significado sea ambiguo o complejo, cada actividad, evento o gateway debe tener un propósito claramente definido que pueda explicarse con claridad.
 
 ## 📚 Referencias
 
