@@ -1,61 +1,61 @@
-# 📄 Informe – Modelado BPMN del Proceso de Generación del FUEC
+# 📄 Informe Técnico del Taller
 
-## 🏢 Descripción del proceso seleccionado
+## 🔖 Nombre del Taller
 
-El proceso seleccionado por el grupo corresponde a la generación del Formato Único de Extracto del Contrato (FUEC) en la empresa TRANS CAPITAL S.A.S. Este documento es obligatorio para la prestación del servicio de transporte especial, ya que certifica que el servicio es legal y cumple con la normativa de tránsito vigente. El FUEC contiene información relevante como los datos del conductor, del vehículo, del cliente y del servicio prestado, y es requerido por las autoridades como soporte durante controles operativos.
+Taller 1 - Modelado de Procesos de Negocio con BPMN
 
+## 👥 Integrantes del equipo
 
-## 🔄 Modelado del proceso utilizando BPMN
+* Sofia Vargas Garzon
+* Juan David Moreno Suarez
+* Jaime Andres Olarte
+* Oscar Vergara
 
-El modelado BPMN permitió representar de forma clara el flujo de generación del FUEC, identificando las actividades y decisiones involucradas en el proceso.
+## 🧠 Descripción general del trabajo
 
-### Actor del proceso
+Este taller tuvo como objetivo modelar el proceso de generación del Formato Único de Extracto del Contrato (FUEC) de la empresa TRANS CAPITAL S.A.S utilizando la notación BPMN. El FUEC es un documento obligatorio que certifica la legalidad de los servicios de transporte prestados, incluyendo información del conductor, vehículo y servicio. El modelado permitió representar gráficamente el flujo actual del proceso, facilitando su comprensión, análisis e identificación de oportunidades de mejora.
 
-Tras analizar el proceso, se determinó que existe **un único actor principal**:
+## 🔧 Proceso de desarrollo
 
-* **Personal administrativo**: responsable de diligenciar la información, verificar los datos, imprimir, escanear y enviar el documento.
+El desarrollo inició con el análisis del proceso real de generación del FUEC, identificando las actividades involucradas desde la solicitud del documento hasta su envío al conductor. Se determinó que el proceso es manual y depende completamente del personal administrativo.
 
-Otros elementos fueron descartados como actores:
+Posteriormente, se identificaron los elementos BPMN necesarios, como el evento de inicio, las actividades, el punto de decisión relacionado con la verificación de la información y el evento de fin. Se utilizó draw.io como herramienta para construir el diagrama, organizando el flujo de manera secuencial y clara. Durante el modelado, se realizaron ajustes para asegurar que el diagrama representara correctamente el proceso real.
 
-* **Conductor**: no participa en la generación del documento, solo lo recibe al final del proceso.
-* **Excel**: es únicamente una herramienta de apoyo, no ejecuta acciones ni toma decisiones.
+## 🧩 Análisis del modelo propuesto
 
-### Flujo general del proceso
+El modelo se estructura de forma secuencial, iniciando con la necesidad de generar el FUEC, seguido por el diligenciamiento de la información en Excel, la verificación de los datos, la impresión del documento, su digitalización y su envío final.
 
-El proceso sigue la siguiente secuencia:
+El modelo representa adecuadamente las necesidades de la empresa, ya que refleja el flujo real utilizado para generar el documento, así como el rol principal del personal administrativo en todas las actividades.
 
-**1. Solicitud o necesidad del FUEC:** Se identifica la necesidad de generar el documento para un servicio específico.
+Se asumió que la verificación de la información es un punto crítico del proceso, ya que los errores en la digitación pueden afectar la validez del documento. También se consideró que el proceso es completamente manual y no cuenta con automatización.
 
-**2. Diligenciamiento en Excel:** El personal administrativo completa manualmente una plantilla en Excel con los datos del conductor, vehículo, cliente y servicio.
+## 📈 Diagrama final entregado
 
-**3. Impresión en formato oficial:** El archivo se imprime en el formato físico preestablecido de la empresa.
+![Modelo BPMN Generación FUEC](modelo-final.png)
 
-**4. Verificación de la información:** Se revisa el documento para detectar errores de digitación o inconsistencias.
+## 📋 Tabla de actores, entidades o componentes
 
-**5. Escaneo del documento:** El formato impreso es digitalizado.
+| Nombre del elemento     | Tipo        | Descripción                                                     | Responsable             |
+| ----------------------- | ----------- | --------------------------------------------------------------- | ----------------------- |
+| Personal administrativo | Actor       | Encargado de diligenciar, verificar, generar y enviar el FUEC   | TRANS CAPITAL S.A.S     |
+| FUEC                    | Documento   | Documento que certifica la legalidad del servicio de transporte | TRANS CAPITAL S.A.S     |
+| Plantilla Excel         | Herramienta | Archivo utilizado para registrar la información del FUEC        | Personal administrativo |
 
-**6. Envío al conductor:** El archivo final es enviado al conductor como soporte legal del servicio.
+## 🔍 Investigación complementaria
 
-## ⚖️ Diferencias con el caso base (Clínica Salud Viva)
+### Tema investigado:
 
-Aunque ambos procesos fueron modelados utilizando BPMN, presentan diferencias importantes:
+Buenas prácticas en el modelado de procesos utilizando BPMN.
 
-**1. Nivel de automatización:**
-El proceso de la clínica es automatizado y gestionado completamente por un sistema. En cambio, el proceso del FUEC es manual y depende de la intervención del personal administrativo.
+### Resumen:
 
-**2. Actores involucrados:**
-En la clínica, el actor principal es el paciente que interactúa con el sistema. En el proceso del FUEC, el único actor activo es el personal administrativo.
+BPMN es un estándar internacional que permite representar procesos de negocio de forma visual, facilitando su análisis y comprensión. Su uso permite identificar claramente las actividades, actores y decisiones dentro de un proceso.
 
-**3. Manejo de la información:**
-La clínica gestiona la información de forma totalmente digital. Por el contrario, el proceso del FUEC combina Excel con documentos físicos, impresiones y escaneo.
+Entre las buenas prácticas se encuentra el uso correcto de eventos, actividades y gateways, así como la representación clara del flujo del proceso. Esto facilita la identificación de mejoras y optimizaciones.
 
-**4. Eficiencia del proceso:**
-El proceso automatizado de la clínica es más rápido y eficiente. El proceso del FUEC es más lento debido a las actividades manuales que requiere.
+En este taller, BPMN permitió representar el proceso de generación del FUEC de forma clara, facilitando su análisis y permitiendo comprender su estructura y funcionamiento.
 
-## ✅ Justificación del modelado
+## 📚 Referencias
 
-El modelado BPMN de este proceso es importante porque permite comprender de forma clara cómo se genera un documento crítico para la operación de la empresa. Además, facilita la identificación de actividades manuales que pueden representar riesgos, como errores en la digitación de información o pérdida de documentos.
-
-El diagrama también permite identificar oportunidades de mejora, como la posible digitalización completa del proceso, la automatización de la generación del documento y la reducción del uso de papel. Estas mejoras podrían aumentar la eficiencia, reducir errores y optimizar el tiempo requerido para generar el FUEC.
-
-Adicionalmente, el modelado proporciona una representación visual que facilita el análisis del proceso y su comprensión por parte de diferentes actores, lo que es fundamental para la mejora continua y la optimización de los procesos organizacionales.
+* [1] Object Management Group. *Business Process Model and Notation (BPMN) Version 2.0*. [https://www.omg.org/spec/BPMN/](https://www.omg.org/spec/BPMN/)
+* [2] Camunda. *BPMN Reference Guide*. [https://camunda.com/bpmn/reference/](https://camunda.com/bpmn/reference/)
